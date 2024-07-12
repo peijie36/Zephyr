@@ -1,10 +1,6 @@
 "use strict";
 
 /*
- * Name: Scott Nguyen
- * Date: 04/18/2024
- * Section: CSE 154 AB - Elias Belzberg, Quinton Pharr
- *
  * This is the JS file that handles the authentication logic for our project.
  */
 

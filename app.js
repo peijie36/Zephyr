@@ -1,8 +1,4 @@
 /*
- * Name: Scott Nguyen
- * Date: 5/28/2024
- * Section: CSE 154 AB - Elias Belzberg, Quinton Pharr
- *
  * This file contains the backend services for the Zephyr ecommerce site.
  * It handles requests to fetch items, search for items, filter items by categories,
  * user login/signup, add items to cart, make a purhcase, and access previous

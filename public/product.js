@@ -1,8 +1,4 @@
 /*
- * Name: Scott Nguyen & Peijie Zheng
- * Date: 6/3/2024
- * Section: CSE 154 AB - Elias Belzberg, Quinton Pharr
- *
  * This is the JS file that handles the product details page. It shows the product
  * alongside all of the details associated with the item.
  */
