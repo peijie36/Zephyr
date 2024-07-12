@@ -1,0 +1,73 @@
+/*
+  Name: Scott Nguyen & Peijie Zheng
+  Date: 5/4/2024
+  Section: CSE 154 AB - Elias Belzberg, Quinton Pharr
+
+  This is the styles.css file that applies the general styling rules to all HTML
+  pages
+*/
+
+body {
+  font-family: "Source Code Pro", monospace;
+  margin: auto;
+  width: 90%;
+}
+
+button {
+  font-family: "Source Code Pro", monospace;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+nav {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a, nav section a {
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav section, nav section a {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+nav div a {
+  margin-left: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#title {
+  color: black;
+  font-weight: 700;
+  font-size: 48px;
+  text-decoration: none;
+}
+
+#user-status {
+  display: flex;
+  margin-right: 20px;
+}

@@ -1,0 +1,141 @@
+/*
+  Name: Scott Nguyen & Peijie Zheng
+  Date: 6/3/2024
+  Section: CSE 154 AB - Elias Belzberg, Quinton Pharr
+
+  This is the cart.css file that applies the styling for the cart.html/cart page.
+  It sets out the format of the cart and purchase interaction.
+*/
+
+h2 {
+  font-size: 36px;
+}
+
+.item, .order-item, .item a {
+  width: 100%;
+}
+
+.item a, .order-item {
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item a {
+  justify-content: space-between;
+}
+
+.order-item {
+  justify-content: space-around;
+}
+
+.item a img, .order-item img {
+  max-width: 60%;
+  max-height: 60%;
+}
+
+#header, #cost div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#cost button {
+  width: 50%;
+  padding: 15px 0;
+  border-radius: 18px;
+  color: white;
+  background-color: #454242;
+  margin: 25px auto 0 auto;
+}
+
+#cart {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#cart-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#checkout-details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#cost-status-wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#cost {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#cart-status {
+  border-radius: 18px;
+  padding: 25px 0px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #5F5D5D;
+}
+
+#cart-status div {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 0px 50px;
+  gap: 15px;
+}
+
+#cart-status div img {
+  height: fit-content;
+  width: fit-content;
+}
+
+.transaction {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.transaction .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.transaction .items-list {
+  list-style: none;
+  padding: 0;
+}
+
+.transaction .item {
+  margin-bottom: 5px;
+}
+
+.transaction .item .name, .header {
+  font-weight: bold;
+}
+
+.transaction .item .quantity {
+  margin-right: 5px;
+}
+
+.transaction .item .quantity, .price {
+  color: #666;
+}

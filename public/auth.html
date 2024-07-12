@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+  ***
+  Name: Scott Nguyen & Peijie Zheng
+  Date: 5/4/2024
+  Section: CSE 154 AB - Elias Belzberg, Quinton Pharr
+
+  This is the auth.html page that renders the sign-up/login form
+  where users can login with their credentials or create new accounts.
+  ***
+-->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="auth.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <script src="auth.js"></script>
+  <title>Zephyr</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <section>
+      </section>
+      <a href="index.html" id="title">
+        <img src="./images/logo.png" alt="logo">
+      </a>
+      <section>
+      </section>
+    </nav>
+  </header>
+
+  <main>
+    <section id="error">
+    </section>
+    <div class="wrapper">
+      <div id="login" class="form-box">
+        <div>
+          <h2>Login</h2>
+        </div>
+        <form action="#">
+          <div class="input-box">
+            <input type="text" id="username" required>
+            <label for="username">Username</label>
+          </div>
+          <div class="input-box">
+            <input type="password" id="password" required >
+            <label for="password">Password</label>
+          </div>
+          <button type="submit" id="login-btn" class="auth-btn">Login</button>
+          <div class="swap">
+            <p>Don't have an account? <a href="" class="signup">Sign Up</a></p>
+          </div>
+        </form>
+        <div id="error-login">
+        </div>
+      </div>
+      <div id="signup" class="form-box hidden">
+        <h2>Sign Up</h2>
+        <form action="#">
+          <div class="input-box">
+            <input type="text" id="email" required>
+            <label for="email">Email</label>
+          </div>
+          <div class="input-box">
+            <input type="text" id="signup-username" required>
+            <label for="signup-username">Username</label>
+          </div>
+          <div class="input-box">
+            <input type="text" id="signup-password" required>
+            <label for="signup-password">Password</label>
+          </div>
+          <button type="submit" id="signup-btn" class="auth-btn">Sign Up</button>
+          <div class="swap">
+            <p>Have an account? <a href="#" class="signup">Sign In</a></p>
+          </div>
+        </form>
+        <div id="error-signup">
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

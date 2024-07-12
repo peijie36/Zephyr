@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+  ***
+  Name: Scott Nguyen & Peijie Zheng
+  Date: 5/4/2024
+  Section: CSE 154 AB - Elias Belzberg, Quinton Pharr
+
+  This is the product-detail.html page that display all the information of a specific
+  item. It includes product image, title, description, price, and a button to add
+  to the user's shopping cart.
+  ***
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./product-detail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="./product.js"></script>
+    <title>Zephyr</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" id="logo">
+          <img src="./images/logo.png" alt="logo">
+        </a>
+        <section id="user-status">
+          <a href="cart.html">
+            <img src="./images/cart.png" alt="cart">
+          </a>
+        </section>
+      </nav>
+    </header>
+
+    <main>
+      <section id="error">
+      </section>
+      <div id="product"></div>
+      <div id="detail">
+        <section>
+          <div>
+            <h2 id="title"></h2>
+            <p id="category"></p>
+            <p id="price"></p>
+          </div>
+          <ul id="descriptions">
+          </ul>
+        </section>
+        <button id="add-to-cart">Add to Cart</button>
+        <div id="cart-status">
+          <div>
+            <img src="./images/truck.png" alt="truck">
+            <p>Free shipping on qualifying orders.</p>
+          </div>
+          <div>
+            <img src="./images/shipping.png" alt="shipping">
+            <p>Free returns within 14 days from delivery.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

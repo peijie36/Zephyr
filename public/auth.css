@@ -1,0 +1,144 @@
+/*
+  Name: Scott Nguyen & Peijie Zheng
+  Date: 5/4/2024
+  Section: CSE 154 AB - Elias Belzberg, Quinton Pharr
+
+  This is the auth.css file that contains all the styling rules for the auth.html page,
+  specifically the login and signup page.
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 170px;
+}
+
+.wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 500px;
+}
+
+.form-box {
+  width: 100%;
+  height: 100%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#signup, #login {
+  padding: 0 40px;
+}
+
+.form-box h2, p {
+  text-align: center;
+  margin: 0;
+}
+
+.form-box h2 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 25px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: black;
+  font-weight: 500px;
+  padding-right: 23px;
+  border-bottom: 2px solid black;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -5px;
+  transition: 0.5s;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 24px;
+}
+
+.auth-btn {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  border: 2px solid black;
+  outline: none;
+  border-radius: 20px;
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.form-box .swap {
+  font-size: 14.5px;
+  color: black;
+  text-align: center;
+  margin: 20px 0 10px;
+}
+
+.swap a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.swap a:hover {
+  text-decoration: underline;
+}
+
+.wrapper .login-text, .wrapper .signup-text {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-text h2, .signup-text h2 {
+  font-size: 32px;
+  text-align: center;
+}

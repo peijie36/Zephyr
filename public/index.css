@@ -1,0 +1,145 @@
+/*
+  Name: Scott Nguyen & Peijie Zheng
+  Date: 5/4/2024
+  Section: CSE 154 AB - Elias Belzberg, Quinton Pharr
+
+  This is the index.css file that contains all the styling rules for the index.html/home page
+  of our site. Including filters/search bars, grid/list view, and available items.
+*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.item-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-list a {
+  width: 50%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-list a img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.item-block a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.item-block a img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.item-block a p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.active {
+  border-bottom: 3px solid black;
+}
+
+.selected {
+  text-decoration: underline;
+}
+
+#filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#filter-btns button {
+  border: 1px #D9D9D9 solid;
+  border-radius: 18px;
+  background-color: #D9D9D9;
+  padding: 10px 25px;
+}
+
+#filter-btns button.active {
+  background-color: transparent;
+}
+
+#items-container.block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+#items-container.list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+#format {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+}
+
+#error {
+  display: flex;
+  justify-content: center;
+}
+
+#search-bar {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#search-bar span {
+  margin-top: 25px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#search-bar input[type="search"] {
+  font-size: 17px;
+  width: 100%;
+  height: 30px;
+  border-radius: 18px;
+  background-color: #D9D9D9;
+  padding: 25px 20px;
+  border: none;
+}
+
+#search-bar button {
+  display: flex;
+  position: absolute;
+  right: 20px;
+}
+
+#search-bar img {
+  width: 20px;
+}

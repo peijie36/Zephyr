@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+  ***
+  Name: Scott Nguyen & Peijie Zheng
+  Date: 6/3/2024
+  Section: CSE 154 AB - Elias Belzberg, Quinton Pharr
+
+  This cart.html renders the cart page. It includes current items in the cart,
+  information on cart pricing, and previous transactions.
+  ***
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="./cart.js"></script>
+    <title>Zephyr</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" id="title">
+          <img src="./images/logo.png" alt="logo">
+        </a>
+        <section id="user-status">
+          <a href="cart.html">
+            <img src="./images/cart.png" alt="cart">
+          </a>
+        </section>
+      </nav>
+    </header>
+    <main>
+      <section id="error">
+      </section>
+      <div id="header">
+        <h2>Cart</h2>
+        <button id="clear-cart">Clear Cart</button>
+      </div>
+      <section id="cart">
+        <div id="cart-items">
+          <p>Please Login to Checkout!</p>
+        </div>
+        <div id="checkout-details">
+          <div id="cost-status-wrapper">
+            <div id="cost">
+              <h3>Total</h3>
+              <div>
+                <p>Subtotal</p>
+                <p id="subtotal">$</p>
+              </div>
+              <div>
+                <p>Shipping</p>
+                <p>$0</p>
+              </div>
+              <div>
+                <p>Total</p>
+                <p id="total">$</p>
+              </div>
+              <div>
+                <button id="checkout-btn">Checkout</button>
+              </div>
+            </div>
+            <div id="cart-status">
+              <div>
+                <img src="./images/truck.png" alt="truck">
+                <p>Free shipping on qualifying orders.</p>
+              </div>
+              <div>
+                <img src="./images/shipping.png" alt="shipping">
+                <p>Free returns within 14 days from delivery.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Previous Transactions</h2>
+        <section id="orders">
+          <div id="order-header">
+            <p></p>
+            <p></p>
+            <p></p>
+          </div>
+          <div id="order-history"></div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

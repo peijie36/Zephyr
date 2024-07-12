@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+  ***
+  Name: Scott Nguyen & Peijie Zheng
+  Date: 5/4/2024
+  Section: CSE 154 AB - Elias Belzberg, Quinton Pharr
+
+  This index.html is the main overview page of our application. It includes navigation bar
+  with a logo, search bar, sign in button, and cart. It also display a list of currently
+  available items as well as filters.
+  ***
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="./index.js"></script>
+    <title>Zephyr</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" id="title">
+          <img src="./images/logo.png" alt="logo">
+        </a>
+        <section id="user-status">
+          <a href="cart.html">
+            <img src="./images/cart.png" alt="cart">
+          </a>
+        </section>
+      </nav>
+    </header>
+    <main>
+      <section id="error">
+      </section>
+      <section id="search-bar">
+        <span>
+          <input type="search" placeholder="Search..." aria-label="Search for specific items">
+          <button id="search-btn">
+            <img src="images/search-icon.png" alt="search icon">
+          </button>
+        </span>
+      </section>
+      <section id="filter">
+        <div id="filter-btns">
+          <button id="all-btn" class="active">All</button>
+          <button id="shirts-btn">T-Shirt</button>
+          <button id="pants-btn">Pants</button>
+          <button id="outer-btn">Outerwear</button>
+          <button id="acc-btn">Accessories</button>
+        </div>
+        <div id="format">
+          <button>
+            <img src="./images/list.png" alt="list view button" id="list">
+          </button>
+          <button>
+            <img src="./images/block.png" alt="block view button" class="active" id="block">
+          </button>
+        </div>
+      </section>
+      <section id="items-container" class="block">
+      </section>
+      <footer>
+        <p>Disclaimer: All images were pulled from Unsplashed.com</p>
+      </footer>
+    </main>
+  </body>
+</html>
